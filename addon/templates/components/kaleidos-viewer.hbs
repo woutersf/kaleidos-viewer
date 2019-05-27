@@ -1,12 +1,11 @@
 {{#if this.documentVersion}}
-  {{log 'htmlSnippet:' this.htmlSnippet}}
   {{#if (eq this.documentVersion.file.extension "pdf")}}
     {{pdf-view filePath=(concat "/files/" this.documentVersion.file.id "/download")}}
   {{else if this.htmlSnippet}}
     {{#if this.htmlSnippet.isPending}}
       Loading...
     {{else}}
-      value: {{{this.htmlSnippet.value}}}
+      {{{this.htmlSnippet.content}}}
     {{/if}}
   {{else}}
     Document of type <i>{{this.documentVersion.file.extension}}</i> currently not supported for viewing.
