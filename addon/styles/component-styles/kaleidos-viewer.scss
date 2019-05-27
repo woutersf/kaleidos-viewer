@@ -6,7 +6,7 @@
 }
 
 .document {
-  font-family: "flanders-sans; sans-serif";
+  font-family: "flanders-sans", sans-serif;
   font-size: 11pt;
   padding-left: 20mm;
   padding-right: 25mm;
@@ -32,6 +32,15 @@
     .vr-logo-wrapper {
       width: 1.71in;
       height: 0.79in;
+      img {
+        display: block;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        background: url(kaleidos-viewer/assets/Logo_Vlaamse_Regering.svg) no-repeat;
+        width: 284px; /* Width of new image */
+        height: 284px; /* Height of new image */
+        padding-left: 284px; /* Equal to width of new image */
+      }
     }
     .minister-titles * {
       text-transform: uppercase;
@@ -43,7 +52,7 @@
 
     .concerns {
       display: inline-flex;
-      font-family: "flanders-sans-medium";
+      font-weight: 500;
       font-size: 14pt;
       :before {
         content: 'Betreft:';
@@ -62,7 +71,7 @@
       }
     } 
     .title {
-      font-family: "flanders-sans-medium";
+      font-weight: 500;
       font-size: 14pt;
       text-align: center;
       padding-top: 1em;
