@@ -14,7 +14,7 @@ export default Component.extend({
     if( this.documentVersion && this.documentVersion.convertedFile )
     {
       console.log(`Fetching converted file`);
-      const url = new URL(`/files/${get(this,'documentVersion.convertedFile.id')}/download`, window.location.href);
+      const url = `/files/${get(this,'documentVersion.convertedFile.id')}/download`;
       return DS.PromiseObject.create({
         promise: fetch(url).then((response) => {
           return response.text()
