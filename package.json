@@ -23,7 +23,7 @@
   "dependencies": {
     "ember-cli-babel": "^7.1.2",
     "ember-cli-htmlbars": "^3.0.0",
-    "ember-component-css": "^0.6.7",
+    "ember-component-css": "^0.6.9",
     "ember-pdfjs-wrapper": "git+https://github.com/MikiDi/ember-pdfjs-wrapper.git"
   },
   "devDependencies": {
