@@ -79,7 +79,15 @@
       font-size: 14pt;
     }
     p {
-      margin-bottom: 1.8em;
+      margin-bottom: 1.2em;
+    }
+    table {
+      empty-cells: show;
+      border-collapse: collapse;
+      margin: 0px;
+    }
+    table, td, th {
+      border: 1px solid black;
     }
   }
 }
