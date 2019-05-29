@@ -116,4 +116,19 @@
       }
     }
   }
+  footer {
+    .minister-titles {
+      list-style-type: none;
+      text-align: center;
+      .minister-signature {
+        margin-bottom: 3em;
+        & > * {
+          display: block;
+        }
+      }
+      .minister-title {
+        margin-bottom: 6em;
+      }
+    }
+  }
 }
