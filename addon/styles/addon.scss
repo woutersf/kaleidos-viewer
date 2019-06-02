@@ -125,10 +125,10 @@
         margin-bottom: 3em;
         & > * {
           display: block;
+          &:nth-last-child(2) {
+            margin-bottom: 6em;
+          }
         }
-      }
-      .minister-signature:nth-last-child(2) {
-        margin-bottom: 6em;
       }
     }
   }
