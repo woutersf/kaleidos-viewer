@@ -31,6 +31,7 @@
     .vr-logo-wrapper {
       width: 1.71in;
       height: 0.79in;
+      margin-bottom: 2.5em;
     }
     .minister-titles * {
       text-transform: uppercase;
@@ -65,8 +66,8 @@
       font-size: 14pt;
       text-transform: uppercase;
       text-align: center;
-      padding-top: 1em;
-      padding-bottom: 1.5em;
+      margin-top: 1em;
+      margin-bottom: 1.5em;
     }
   }
   main {
@@ -117,7 +118,7 @@
     }
   }
   footer {
-    .minister-titles {
+    .minister-signatures {
       list-style-type: none;
       text-align: center;
       .minister-signature {
@@ -126,7 +127,7 @@
           display: block;
         }
       }
-      .minister-title {
+      .minister-signature:nth-last-child(2) {
         margin-bottom: 6em;
       }
     }
