@@ -169,7 +169,7 @@
       margin: 2em 0;
     }
     p {
-      margin: 1em;
+      margin: 1em 0;
     }
     img {
       max-width: 100%;  
@@ -178,16 +178,19 @@
       margin-bottom: 2em;
       h1, h2, h3, h4, h5, h6
       {
-        font-size: 1em;
+        font-size: 12pt;
         font-weight: normal;
-        margin: 1em;
+        margin: 1em 0;
       }
-      .clause {
-        text-indent: 4em;
+      ol {
+        margin-top: -1em;
       }
-      .paragraph > .clause:first-of-type {
-        text-indent: 0;
-      }
+    }
+    .clause {
+      text-indent: 4em;
+    }
+    .paragraph > .clause:first-of-type {
+      text-indent: 0;
     }
   }
   footer {
