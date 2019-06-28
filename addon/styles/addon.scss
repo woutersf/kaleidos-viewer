@@ -184,26 +184,41 @@
       }
     }
     article{
-      .article-number, .article-number + .clause {
+      margin: 1em 0;
+      .article-number + .clause {
         display: inline;
+        &:first-child {
+          display: inline;
+        }
       }
       .clause {
         margin: 1em 0;
         &:first-child {
-          text-indent: 4em;
+          text-indent: 3em;
         }
         p + .enumeration {
-          margin-top: -1em;
+          margin-top: 0em;
         }
       }
       p.clause {
-        text-indent: 4em;
+        text-indent: 3em;
       }
       p {
         margin: 0;
       }
       .paragraph > .clause:first-of-type {
         text-indent: 0;
+      }
+      .enumeration {
+        list-style: none;
+        counter-reset: enumeration-counter;
+        li {
+          counter-increment: enumeration-counter;
+        }
+        li::before {
+          content: counter(enumeration-counter) "°";
+          padding-right: 2em;
+        }
       }
     }
   }
