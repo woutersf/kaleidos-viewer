@@ -212,12 +212,14 @@
       .enumeration {
         list-style: none;
         counter-reset: enumeration-counter;
+        padding-left: 1em;
         li {
           counter-increment: enumeration-counter;
         }
         li::before {
           content: counter(enumeration-counter) "°";
           padding-right: 2em;
+          margin-left: -3em;
         }
       }
     }
