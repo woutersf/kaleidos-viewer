@@ -178,19 +178,28 @@
       margin-bottom: 2em;
       h1, h2, h3, h4, h5, h6
       {
-        font-size: 12pt;
+        font-size: 10pt;
         font-weight: normal;
         margin: 1em 0;
       }
-      ol {
-        margin-top: -1em;
+    }
+    .article{
+      .article-number + * {
+        display: inline;
       }
-    }
-    .clause {
-      text-indent: 4em;
-    }
-    .paragraph > .clause:first-of-type {
-      text-indent: 0;
+      .clause {
+        margin: 1em 0;
+        text-indent: 4em;
+        .enumeration {
+          margin-top: 0;
+        }
+      }
+      p {
+        margin: 0;
+      }
+      .paragraph > .clause:first-of-type {
+        text-indent: 0;
+      }
     }
   }
   footer {
