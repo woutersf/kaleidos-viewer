@@ -236,7 +236,8 @@
       list-style-type: none;
       text-align: center;
       .minister-signature {
-        margin-bottom: 3em;
+        margin: 3em 0;
+        display: block;
         & > * {
           display: block;
           &:nth-last-child(2) {
