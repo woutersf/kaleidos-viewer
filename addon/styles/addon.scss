@@ -184,15 +184,20 @@
       }
     }
     .article{
-      .article-number + * {
+      .article-number, .article-number + .clause {
         display: inline;
       }
       .clause {
         margin: 1em 0;
-        text-indent: 4em;
-        .enumeration {
-          margin-top: 0;
+        &:first-child {
+          text-indent: 4em;
         }
+        p + .enumeration {
+          margin-top: -1em;
+        }
+      }
+      p.clause {
+        text-indent: 4em;
       }
       p {
         margin: 0;
