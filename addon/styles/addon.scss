@@ -193,7 +193,7 @@
       }
       .clause {
         margin: 1em 0;
-        &:first-child {
+        & > :first-child {
           text-indent: 3em;
         }
         p + .enumeration {
@@ -212,9 +212,21 @@
       .enumeration {
         list-style: none;
         counter-reset: enumeration-counter;
-        padding-left: 1em;
         li {
           counter-increment: enumeration-counter;
+          .enumeration {
+            list-style: lower-alpha;
+            counter-reset: sub-enumeration-counter;
+            li {
+              counter-increment: sub-enumeration-counter;
+            }
+            li::before {
+              content: counter(enumeration-counter) ")";
+              padding-right: 2em;
+              margin-left: -3em;
+            }
+          }
+
         }
         li::before {
           content: counter(enumeration-counter) "°";
