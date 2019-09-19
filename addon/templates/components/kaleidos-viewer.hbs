@@ -1,6 +1,6 @@
 {{#if this.documentVersion}}
   {{#if (eq this.documentVersion.file.extension "pdf")}}
-    {{pdf-view filePath=(concat "/files/" this.documentVersion.file.id "/download")}}
+    {{pdf-view filePath=(concat "/files/" this.documentVersion.file.id "/download") prefix=prefix}}
   {{else if this.htmlSnippet}}
     {{#if this.htmlSnippet.isPending}}
       Loading...
